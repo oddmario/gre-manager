@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.20
+* Don't enforce txqueuelen/netdev_max_backlog to prevent bufferbloating
+
 ## v1.19
 * Ensure no race conditions between goroutines and the main function happen
 

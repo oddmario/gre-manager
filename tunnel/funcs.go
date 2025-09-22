@@ -253,8 +253,6 @@ func (t *Tunnel) Init(mode, main_network_interface string, dynamic_ip_updater_ap
 		}
 	}
 
-	utils.Cmd("ip link set "+t.TunnelInterfaceName+" txqueuelen 99999", true, true)
-
 	t.IsInitialised = true
 
 	logger.Info("The tunnel " + t.TunHostMainPublicIP + " <-> " + t.BackendServerPublicIP + " has been setup successfully.")
